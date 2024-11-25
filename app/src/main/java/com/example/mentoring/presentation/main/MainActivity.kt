@@ -1,4 +1,4 @@
-package com.example.mentoring
+package com.example.mentoring.presentation.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

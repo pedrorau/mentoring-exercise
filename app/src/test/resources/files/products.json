@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "accountId": "1",
+      "accountName": "Cuenta Soles",
+      "totalAmount": "S/. 1,600.20",
+      "icon": "https://logo.com",
+      "accountNumber": "123456789"
+    },
+    {
+      "accountId": "2",
+      "accountName": "Cuenta Dolares",
+      "totalAmount": "$ 1,800.40",
+      "icon": "https://logo.com",
+      "accountNumber": "987654321"
+    }
+  ]
+}

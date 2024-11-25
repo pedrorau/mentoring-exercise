@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "description": "Ingreso",
+      "amount": "S/. 100.00"
+    },
+    {
+      "description": "Egreso",
+      "amount": "S/. 110.00"
+    },
+    {
+      "description": "Ingreso",
+      "amount": "S/. 120.00"
+    },
+    {
+      "description": "Egreso",
+      "amount": "S/. 130.00"
+    }
+  ]
+}

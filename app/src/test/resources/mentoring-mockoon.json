@@ -1,0 +1,172 @@
+{
+  "uuid": "3e660aa3-1fad-4f18-97d7-39a47861a137",
+  "lastMigration": 33,
+  "name": "Mentoring mockoon",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "3cb64696-36be-4689-953d-6f191f845a14",
+      "type": "http",
+      "documentation": "Login",
+      "method": "post",
+      "endpoint": "login",
+      "responses": [
+        {
+          "uuid": "3283e345-b723-46a6-8c47-a703cd094a2c",
+          "body": "{\n  \"data\": {\n    \"isValidUser\": true\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "",
+              "value": "{\"username\":\"15352310\", \"password\": \"claveS1_\"}",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "d4c82f29-2623-4fbf-8c68-c06b17256442",
+      "type": "http",
+      "documentation": "Accounts Information",
+      "method": "get",
+      "endpoint": "getAccountsInformation",
+      "responses": [
+        {
+          "uuid": "5c992b50-966f-4b28-b21c-66352e530e98",
+          "body": "{\n  \"data\": [\n    {\n      \"accountId\": \"1\",\n      \"accountName\": \"Cuenta Soles\",\n      \"totalAmount\": \"S/. 1,600.20\",\n      \"icon\": \"https://logo.com\",\n      \"accountNumber\": \"123456789\"\n    },\n    {\n      \"accountId\": \"2\",\n      \"accountName\": \"Cuenta Dolares\",\n      \"totalAmount\": \"$ 1,800.40\",\n      \"icon\": \"https://logo.com\",\n      \"accountNumber\": \"987654321\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "8a5f1514-4d82-419f-ac49-66861907fbd7",
+      "type": "http",
+      "documentation": "Account Details",
+      "method": "get",
+      "endpoint": "getAccountDetails",
+      "responses": [
+        {
+          "uuid": "187aefcb-1553-473c-8b2a-17a18ad367b2",
+          "body": "{\n  \"data\": [\n    {\n      \"description\": \"Ingreso\",\n      \"amount\": \"S/. 100.00\"\n    },\n    {\n      \"description\": \"Egreso\",\n      \"amount\": \"S/. 110.00\"\n    },\n    {\n      \"description\": \"Ingreso\",\n      \"amount\": \"S/. 120.00\"\n    },\n    {\n      \"description\": \"Egreso\",\n      \"amount\": \"S/. 130.00\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "3cb64696-36be-4689-953d-6f191f845a14"
+    },
+    {
+      "type": "route",
+      "uuid": "d4c82f29-2623-4fbf-8c68-c06b17256442"
+    },
+    {
+      "type": "route",
+      "uuid": "8a5f1514-4d82-419f-ac49-66861907fbd7"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
